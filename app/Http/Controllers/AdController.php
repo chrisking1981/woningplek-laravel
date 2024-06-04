@@ -29,3 +29,18 @@ class AdController extends Controller
         return redirect()->route('dashboard')->with('success', 'Ad created successfully!');
     }
 }
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Ad;
+use Illuminate\Http\Request;
+
+class AdController extends Controller
+{
+    public function show($id)
+    {
+        $ad = Ad::findOrFail($id);
+        return view('ads.show', ['ad' => $ad]);
+    }
+}
