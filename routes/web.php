@@ -13,7 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome');
+use App\Models\Ad;
+
+Route::get('/', function () {
+    $ads = Ad::all();
+    return view('frontpage', ['ads' => $ads]);
+});
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
