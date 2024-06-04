@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ad;
 use Illuminate\Http\Request;
 
 class AdController extends Controller
@@ -20,7 +21,7 @@ class AdController extends Controller
             'location' => 'required|string|max:255',
         ]);
 
-        $ad = new \App\Models\Ad();
+        $ad = new Ad();
         $ad->title = $request->input('title');
         $ad->description = $request->input('description');
         $ad->location = $request->input('location');
@@ -28,16 +29,7 @@ class AdController extends Controller
 
         return redirect()->route('dashboard')->with('success', 'Ad created successfully!');
     }
-}
-<?php
 
-namespace App\Http\Controllers;
-
-use App\Models\Ad;
-use Illuminate\Http\Request;
-
-class AdController extends Controller
-{
     public function show($id)
     {
         $ad = Ad::findOrFail($id);
