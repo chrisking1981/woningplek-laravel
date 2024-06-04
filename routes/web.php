@@ -23,4 +23,8 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+use App\Http\Controllers\AdController;
+
+Route::post('ads', [AdController::class, 'store'])->name('ads.store');
+
 require __DIR__.'/auth.php';
