@@ -33,6 +33,5 @@ use App\Http\Controllers\AdController;
 Route::post('ads', [AdController::class, 'store'])->name('ads.store');
 
 require __DIR__.'/auth.php';
-use App\Http\Controllers\AdController;
 
 Route::get('/ads/{ad}', [AdController::class, 'show'])->name('ads.show');
