@@ -1,41 +1,5 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <title>Woningruil Website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        .clickable-row {
-            display: block;
-            width: 100%;
-            color: inherit;
-            text-decoration: none;
-        }
-        .clickable-row:hover {
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
-<body class="bg-gray-100 font-sans">
-
-<!-- Header -->
-<header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <img src="https://placehold.co/100x40" alt="Logo" class="h-10">
-        </div>
-        <nav class="flex space-x-4">
-            <a href="#" class="text-blue-600 hover:text-orange-500">Home</a>
-            <a href="#" class="text-blue-600 hover:text-orange-500">Alle woningen</a>
-            <a href="#" class="text-blue-600 hover:text-orange-500">Zoeken</a>
-        </nav>
-        <div class="flex space-x-4">
-            <a href="#" class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">Inloggen</a>
-            <a href="#" class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">Huis Plaatsen</a>
-        </div>
-    </div>
-</header>
+@include('layouts.header')
+@include('layouts.navbar')
 
 <!-- Hoofdsectie -->
 <section class="py-8">
@@ -143,32 +107,4 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-gray-800 py-8 text-white">
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div>
-                <h3 class="font-bold mb-2">Huisruilen</h3>
-                <p class="text-gray-300">Op huisruilen.nl kunt u eenvoudig uw huurwoning ruilen...</p>
-            </div>
-            <div>
-                <h3 class="font-bold mb-2">Handige links</h3>
-                <ul>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Inloggen</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Privacybeleid</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Over Ons</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white">Algemene Voorwaarden</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-bold mb-2">Contact</h3>
-                <p class="text-gray-300">123 Woningstraat, 1000 AB Amsterdam</p>
-                <p class="text-gray-300">Email: info@huisruilen.nl</p>
-                <p class="text-gray-300">Tel: 020-1234567</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+@include('layouts.footer')
