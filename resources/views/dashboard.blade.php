@@ -26,7 +26,7 @@
                         @csrf
                         <div class="mt-4">
                             <label for="title" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{ __('Title') }}</label>
-                            <x-input id="title" class="block mt-1 w-full" type="text" name="title" required autofocus />
+                            <input id="title" class="block mt-1 w-full" type="text" name="title" required autofocus />
                         </div>
                         <div class="mt-4">
                             <label for="description" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{ __('Description') }}</label>
@@ -34,12 +34,12 @@
                         </div>
                         <div class="mt-4">
                             <label for="location" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{ __('Location') }}</label>
-                            <x-input id="location" class="block mt-1 w-full" type="text" name="location" required />
+                            <input id="location" class="block mt-1 w-full" type="text" name="location" required />
                         </div>
                         <div class="mt-4">
-                            <x-button>
+                            <button type="submit" class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
                                 {{ __('Create Ad') }}
-                            </x-button>
+                            </button>
                         </div>
                     </form>
                 </div>
