@@ -8,7 +8,7 @@
             </div>
         </div>
     </nav>
-    <div class="bg-blue-100 dark:bg-blue-900 min-h-screen">
+    <div class="bg-blue-100 dark:bg-blue-900 min-h-screen w-full">
         <div class="container mx-auto py-12">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
