@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
- @section('content')
- @endsection
- =======
+  @section('content')
+  @endsection
+  =======
  @extends('layouts.app')
 
  @section('content')
@@ -17,8 +17,10 @@
              </ul>
          </nav>
          <div class="auth-buttons">
-             <button class="login-btn">Inloggen</button>
-             <button class="register-btn">Profiel aanmaken</button>
+             @guest
+                 <button class="login-btn">Inloggen</button>
+                 <button class="register-btn">Profiel aanmaken</button>
+             @endguest
          </div>
      </header>
 
