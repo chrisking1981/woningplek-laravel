@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <nav class="bg-gray-800 p-4">
+    <nav class="bg-blue-800 p-4">
         <div class="container mx-auto flex justify-between">
             <a href="{{ url('/') }}" class="text-white text-lg font-bold">{{ __('Home') }}</a>
             <div>
@@ -8,9 +8,9 @@
             </div>
         </div>
     </nav>
-    <div class="py-12 bg-gray-100 dark:bg-gray-900">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+    <div class="bg-blue-100 dark:bg-blue-900 min-h-screen">
+        <div class="container mx-auto py-12">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <h3 class="font-semibold text-3xl text-gray-800 dark:text-gray-200 leading-tight mb-6">
                         {{ __('Home Exchange Ads') }}
