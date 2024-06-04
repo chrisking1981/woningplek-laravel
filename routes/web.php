@@ -34,4 +34,7 @@ Route::post('ads', [AdController::class, 'store'])->name('ads.store');
 
 require __DIR__.'/auth.php';
 
+Route::view('login', 'auth.login')->name('login');
+Route::view('register', 'auth.register')->name('register');
+
 Route::get('/ads/{ad}', [AdController::class, 'show'])->name('ads.show');

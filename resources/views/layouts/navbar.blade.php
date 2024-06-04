@@ -6,8 +6,8 @@
             <h1 class="text-xl font-bold">Laravel</h1>
         </div>
         <div class="flex space-x-4">
-            <a href="#" class="hover:underline">Inloggen</a>
-            <a href="#" class="hover:underline">Account maken</a>
+            <a href="{{ route('login') }}" class="hover:underline">Inloggen</a>
+            <a href="{{ route('register') }}" class="hover:underline">Account maken</a>
             <a href="#" class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">Plaats advertentie</a>
         </div>
     </div>
