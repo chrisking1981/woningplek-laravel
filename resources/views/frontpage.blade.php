@@ -1,5 +1,5 @@
-@extends('layouts.header')
-@extends('layouts.navbar')
+@include('layouts.header')
+@include('layouts.navbar')
 
 <!-- Zoeksectie -->
 <section class="bg-gray-200 py-8">
@@ -102,4 +102,4 @@
     </div>
 </section>
 
-@extends('layouts.footer')
+@include('layouts.footer')
