@@ -21,19 +21,16 @@
     <div class="container mx-auto px-4">
         <h2 class="text-blue-600 text-2xl font-bold mb-4">Uitgelichte Huizen</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Herhaal dit blok voor elke woning -->
-            @for ($i = 0; $i < 6; $i++)
+            @foreach ($ads as $ad)
             <div class="bg-white p-4 rounded shadow">
                 <img src="https://placehold.co/600x400" alt="Huis" class="w-full h-48 object-cover rounded mb-4">
                 <div class="text-gray-700">
-                    <h3 class="text-lg font-bold">€{{ rand(500, 1000) }}</h3>
-                    <p>Locatie: Stad {{ $i + 1 }}</p>
-                    <p>Type: Appartement</p>
-                    <p>Aantal kamers: {{ rand(1, 5) }}</p>
+                    <h3 class="text-lg font-bold">{{ $ad->title }}</h3>
+                    <p>Locatie: {{ $ad->location }}</p>
+                    <p>{{ $ad->description }}</p>
                 </div>
             </div>
-            @endfor
-            <!-- Einde herhaalblok -->
+            @endforeach
         </div>
     </div>
 </section>
