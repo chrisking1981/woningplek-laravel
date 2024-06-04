@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="bg-blue-800 text-white">
+<header class="bg-gray-900 text-white">
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
         <div class="flex items-center space-x-2">
             <img src="https://placehold.co/50x50" alt="Logo" class="h-10 w-10">
@@ -14,7 +14,7 @@
 </header>
 
 <!-- Navbar -->
-<nav class="bg-blue-700 text-white">
+<nav class="bg-gray-800 text-white">
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
         <div class="flex space-x-4">
             <a href="{{ route('frontpage') }}" class="flex items-center space-x-1 hover:underline">
