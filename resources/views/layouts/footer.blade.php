@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 text-white">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
-                <h3 class="font-bold mb-2">Huisruilen</h3>
+                <h3 class="font-bold mb-2">Woningplek</h3>
                 <ul>
                     <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
                     <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>

@@ -57,7 +57,7 @@
 <!-- Nieuw op Woningplek -->
 <section class="py-8">
     <div class="container mx-auto px-4">
-        <h2 class="text-blue-600 text-2xl font-bold mb-4">Nieuw op Huisruilen.nl</h2>
+        <h2 class="text-blue-600 text-2xl font-bold mb-4">Nieuw op Woningplek</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Herhaal dit blok voor elke nieuwe woning -->
             @for ($i = 0; $i < 6; $i++)
