@@ -25,15 +25,15 @@
                     <form method="POST" action="{{ route('ads.store') }}">
                         @csrf
                         <div class="mt-4">
-                            <x-label for="title" :value="__('Title')" />
+                            <label for="title" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{ __('Title') }}</label>
                             <x-input id="title" class="block mt-1 w-full" type="text" name="title" required autofocus />
                         </div>
                         <div class="mt-4">
-                            <x-label for="description" :value="__('Description')" />
+                            <label for="description" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{ __('Description') }}</label>
                             <textarea id="description" class="block mt-1 w-full" name="description" required></textarea>
                         </div>
                         <div class="mt-4">
-                            <x-label for="location" :value="__('Location')" />
+                            <label for="location" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{ __('Location') }}</label>
                             <x-input id="location" class="block mt-1 w-full" type="text" name="location" required />
                         </div>
                         <div class="mt-4">
