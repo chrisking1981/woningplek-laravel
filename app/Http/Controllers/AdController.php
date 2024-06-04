@@ -20,7 +20,11 @@ class AdController extends Controller
             'location' => 'required|string|max:255',
         ]);
 
-        // Logic to store the ad in the database goes here
+        $ad = new \App\Models\Ad();
+        $ad->title = $request->input('title');
+        $ad->description = $request->input('description');
+        $ad->location = $request->input('location');
+        $ad->save();
 
         return redirect()->route('dashboard')->with('status', 'Ad created successfully!');
     }
