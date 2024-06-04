@@ -26,6 +26,6 @@ class AdController extends Controller
         $ad->location = $request->input('location');
         $ad->save();
 
-        return redirect()->route('dashboard')->with('status', 'Ad created successfully!');
+        return redirect()->route('dashboard')->with('success', 'Ad created successfully!');
     }
 }
