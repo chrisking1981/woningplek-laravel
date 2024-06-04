@@ -54,7 +54,7 @@
     </div>
 </section>
 
-<!-- Nieuw op Huisruilen.nl -->
+<!-- Nieuw op Woningplek -->
 <section class="py-8">
     <div class="container mx-auto px-4">
         <h2 class="text-blue-600 text-2xl font-bold mb-4">Nieuw op Huisruilen.nl</h2>

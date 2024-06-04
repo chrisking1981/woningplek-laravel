@@ -29,7 +29,7 @@
             <div>
                 <h3 class="font-bold mb-2">Contact Informatie</h3>
                 <p class="text-gray-300">123 Woningstraat, 1000 AB Amsterdam</p>
-                <p class="text-gray-300">Email: info@huisruilen.nl</p>
+                <p class="text-gray-300">Email: info@woningplek.nl</p>
                 <p class="text-gray-300">Tel: 020-1234567</p>
             </div>
         </div>

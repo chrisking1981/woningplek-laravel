@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
         <div class="flex items-center space-x-2">
             <img src="https://placehold.co/50x50" alt="Logo" class="h-10 w-10">
-            <h1 class="text-xl font-bold">Laravel</h1>
+            <h1 class="text-xl font-bold">Woningplek</h1>
         </div>
         <div class="flex space-x-4">
             <a href="{{ route('login') }}" class="hover:underline">Inloggen</a>
