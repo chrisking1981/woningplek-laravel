@@ -17,19 +17,16 @@
 <nav class="bg-blue-700 text-white">
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
         <div class="flex space-x-4">
-            <a href="#" class="flex items-center space-x-1 hover:underline">
+            <a href="{{ route('frontpage') }}" class="flex items-center space-x-1 hover:underline">
                 <i class="fas fa-home"></i><span>Home</span>
             </a>
-            <a href="#" class="flex items-center space-x-1 hover:underline">
+            <a href="{{ route('ads.show', 1) }}" class="flex items-center space-x-1 hover:underline">
                 <i class="fas fa-clock"></i><span>Recente advertenties</span>
             </a>
-            <a href="#" class="flex items-center space-x-1 hover:underline">
+            <a href="{{ route('ads.store') }}" class="flex items-center space-x-1 hover:underline">
                 <i class="fas fa-plus"></i><span>Advertentie plaatsen</span>
             </a>
-            <a href="#" class="flex items-center space-x-1 hover:underline">
-                <i class="fas fa-star"></i><span>Extra opvallen</span>
-            </a>
-            <a href="#" class="flex items-center space-x-1 hover:underline">
+            <a href="{{ route('profile') }}" class="flex items-center space-x-1 hover:underline">
                 <i class="fas fa-user"></i><span>Mijn account</span>
             </a>
         </div>
