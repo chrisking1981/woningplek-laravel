@@ -14,7 +14,7 @@
 </header>
 
 <!-- Navbar -->
-<nav class="bg-gray-800 text-white">
+<nav class="bg-blue-700 text-white">
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
         <div class="flex space-x-4">
             <a href="#" class="flex items-center space-x-1 hover:underline">
