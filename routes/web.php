@@ -18,7 +18,7 @@ use App\Models\Ad;
 Route::get('/', function () {
     $ads = Ad::all();
     return view('frontpage', ['ads' => $ads]);
-});
+})->name('frontpage');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
